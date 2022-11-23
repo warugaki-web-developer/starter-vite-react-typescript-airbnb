@@ -10,7 +10,9 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "lint:eslint": "eslint --ignore-path .gitignore . --ext .js,.jsx,.ts,.tsx,.cjs",
+    "lintfix:eslint": "npm run lint:eslint -- --fix"
   },
   "dependencies": {
     "react": "^18.2.0",
