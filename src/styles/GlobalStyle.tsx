@@ -75,7 +75,8 @@ const GlobalStyle = css`
     }
   }
 
-  #root {
+  #root,
+  #storybook-root {
     max-width: 1280px;
     padding: 2rem;
     margin: 0 auto;
