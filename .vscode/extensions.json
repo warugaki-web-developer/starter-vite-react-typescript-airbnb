@@ -3,6 +3,7 @@
     "editorconfig.editorconfig",
     "dbaeumer.vscode-eslint",
     "esbenp.prettier-vscode",
-    "ionutvmi.path-autocomplete"
+    "ionutvmi.path-autocomplete",
+    "styled-components.vscode-styled-components"
   ]
 }
