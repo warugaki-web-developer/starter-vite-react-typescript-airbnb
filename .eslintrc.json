@@ -20,7 +20,7 @@
     "ecmaVersion": "latest",
     "sourceType": "module"
   },
-  "plugins": ["react", "@typescript-eslint"],
+  "plugins": ["react", "react-hooks", "@typescript-eslint", "testing-library", "jest-dom"],
   "settings": {
     "import/extensions": [".js", ".jsx", ".ts", ".tsx"],
     "import/resolver": {
@@ -47,6 +47,7 @@
       {
         "devDependencies": [
           "vite.config.ts",
+          "src/setupTest.ts",
           ".storybook/**/*.{cjs,jsx,tsx}",
           "src/setupTests.ts",
           "src/stories/**/*.stories.tsx",
@@ -64,5 +65,11 @@
         "tsx": "never"
       }
     ]
-  }
+  },
+  "overrides": [
+    {
+      "files": ["**/tests/**/*.[jt]s?(x)", "**/?(*.)+(spec|test).[jt]s?(x)"],
+      "extends": ["plugin:jest-dom/recommended", "plugin:testing-library/react"]
+    }
+  ]
 }
