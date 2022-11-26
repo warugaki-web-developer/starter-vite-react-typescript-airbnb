@@ -18,7 +18,9 @@
     "format:check": "prettier --check --ignore-path .gitignore './**/*.{js,jsx,ts,tsx,cjs,json,css}'",
     "format:fix": "prettier --write --ignore-path .gitignore './**/*.{js,jsx,ts,tsx,cjs,json,css}'",
     "test": "vitest",
-    "coverage": "vitest run --coverage"
+    "coverage": "vitest run --coverage",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "dependencies": {
     "@emotion/react": "^11.10.5",
@@ -26,6 +28,12 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@storybook/addon-essentials": "^7.0.0-alpha.54",
+    "@storybook/addon-interactions": "^7.0.0-alpha.54",
+    "@storybook/addon-links": "^7.0.0-alpha.54",
+    "@storybook/react": "^7.0.0-alpha.54",
+    "@storybook/react-vite": "^7.0.0-alpha.54",
+    "@storybook/testing-library": "^0.0.13",
     "@stylelint/postcss-css-in-js": "^0.38.0",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -51,6 +59,7 @@
     "jsdom": "^20.0.3",
     "postcss-syntax": "^0.36.2",
     "prettier": "^2.8.0",
+    "storybook": "^7.0.0-alpha.54",
     "stylelint": "^14.15.0",
     "stylelint-config-prettier": "^9.0.4",
     "stylelint-config-recess-order": "^3.0.0",
