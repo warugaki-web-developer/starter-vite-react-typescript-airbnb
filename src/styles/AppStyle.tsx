@@ -6,9 +6,11 @@ const AppStyle = css`
     padding: 1.5em;
     will-change: filter;
   }
+
   .logo:hover {
     filter: drop-shadow(0 0 2em #646cffaa);
   }
+
   .logo.react:hover {
     filter: drop-shadow(0 0 2em #61dafbaa);
   }
@@ -17,6 +19,7 @@ const AppStyle = css`
     from {
       transform: rotate(0deg);
     }
+
     to {
       transform: rotate(360deg);
     }
