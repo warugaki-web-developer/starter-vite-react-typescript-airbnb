@@ -13,6 +13,8 @@
     "preview": "vite preview",
     "lint:eslint": "eslint --ignore-path .gitignore . --ext .js,.jsx,.ts,.tsx,.cjs",
     "lintfix:eslint": "npm run lint:eslint -- --fix",
+    "lint:stylelint": "stylelint ./src/**/*.{css,jsx,tsx}",
+    "lintfix:stylelint": "stylelint --fix ./src/**/*.{css,jsx,tsx}",
     "format:check": "prettier --check --ignore-path .gitignore './**/*.{js,jsx,ts,tsx,cjs,json,css}'",
     "format:fix": "prettier --write --ignore-path .gitignore './**/*.{js,jsx,ts,tsx,cjs,json,css}'"
   },
