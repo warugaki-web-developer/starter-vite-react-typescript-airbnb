@@ -47,6 +47,7 @@
       {
         "devDependencies": [
           "vite.config.ts",
+          "src/setupTest.ts",
           ".storybook/**/*.{cjs,jsx,tsx}",
           "src/setupTests.ts",
           "src/stories/**/*.stories.tsx",
