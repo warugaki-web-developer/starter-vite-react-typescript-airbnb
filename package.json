@@ -13,6 +13,8 @@
     "preview": "vite preview",
     "lint:eslint": "eslint --ignore-path .gitignore . --ext .js,.jsx,.ts,.tsx,.cjs",
     "lintfix:eslint": "npm run lint:eslint -- --fix",
+    "lint:stylelint": "stylelint ./src/**/*.{css,jsx,tsx}",
+    "lintfix:stylelint": "stylelint --fix ./src/**/*.{css,jsx,tsx}",
     "format:check": "prettier --check --ignore-path .gitignore './**/*.{js,jsx,ts,tsx,cjs,json,css}'",
     "format:fix": "prettier --write --ignore-path .gitignore './**/*.{js,jsx,ts,tsx,cjs,json,css}'"
   },
@@ -22,6 +24,7 @@
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@stylelint/postcss-css-in-js": "^0.38.0",
     "@types/node": "^18.11.9",
     "@types/react": "^18.0.24",
     "@types/react-dom": "^18.0.8",
@@ -37,7 +40,12 @@
     "eslint-plugin-jsx-a11y": "^6.6.1",
     "eslint-plugin-react": "^7.31.11",
     "eslint-plugin-react-hooks": "^4.6.0",
+    "postcss-syntax": "^0.36.2",
     "prettier": "^2.8.0",
+    "stylelint": "^14.15.0",
+    "stylelint-config-prettier": "^9.0.4",
+    "stylelint-config-recess-order": "^3.0.0",
+    "stylelint-config-standard": "^29.0.0",
     "typescript": "^4.6.4",
     "vite": "^3.2.3"
   }
