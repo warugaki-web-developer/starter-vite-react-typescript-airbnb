@@ -8,5 +8,9 @@
   },
   "[markdown]": {
     "files.trimTrailingWhitespace": false
-  }
+  },
+  "path-autocomplete.pathMappings": {
+    "@": "${folder}/src"
+  },
+  "path-autocomplete.extensionOnImport": true
 }
