@@ -1,12 +1,12 @@
 import { useState } from 'react';
 import reactLogo from '@/assets/react.svg';
-import '@/App.css';
+import AppStyle from '@/styles/AppStyle';
 
 const App = () => {
   const [count, setCount] = useState(0);
 
   return (
-    <div className="App">
+    <div className="App" css={AppStyle}>
       <div>
         <a href="https://vitejs.dev" target="_blank" rel="noreferrer">
           <img src="/vite.svg" className="logo" alt="Vite logo" />
