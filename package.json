@@ -16,7 +16,9 @@
     "lint:stylelint": "stylelint ./src/**/*.{css,jsx,tsx}",
     "lintfix:stylelint": "stylelint --fix ./src/**/*.{css,jsx,tsx}",
     "format:check": "prettier --check --ignore-path .gitignore './**/*.{js,jsx,ts,tsx,cjs,json,css}'",
-    "format:fix": "prettier --write --ignore-path .gitignore './**/*.{js,jsx,ts,tsx,cjs,json,css}'"
+    "format:fix": "prettier --write --ignore-path .gitignore './**/*.{js,jsx,ts,tsx,cjs,json,css}'",
+    "test": "vitest",
+    "coverage": "vitest run --coverage"
   },
   "dependencies": {
     "@emotion/react": "^11.10.5",
@@ -31,6 +33,7 @@
     "@typescript-eslint/eslint-plugin": "^5.44.0",
     "@typescript-eslint/parser": "^5.44.0",
     "@vitejs/plugin-react": "^2.2.0",
+    "@vitest/coverage-c8": "^0.25.3",
     "eslint": "^8.28.0",
     "eslint-config-airbnb": "^19.0.4",
     "eslint-config-airbnb-typescript": "^17.0.0",
