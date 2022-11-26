@@ -17,6 +17,7 @@
     "format:fix": "prettier --write --ignore-path .gitignore './**/*.{js,jsx,ts,tsx,cjs,json,css}'"
   },
   "dependencies": {
+    "@emotion/react": "^11.10.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
