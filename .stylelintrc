@@ -8,7 +8,9 @@
   "overrides": [
     {
       "files": ["**/*.jsx", "**/*.tsx"],
-      "rules": {},
+      "rules": {
+        "value-keyword-case": null
+      },
       "customSyntax": "@stylelint/postcss-css-in-js"
     }
   ]
