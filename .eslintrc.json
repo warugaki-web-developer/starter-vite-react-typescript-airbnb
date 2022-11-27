@@ -34,6 +34,14 @@
     }
   },
   "rules": {
+    //関数や変数が定義される前に使われているとエラーになるデフォルトの機能をoff
+    "no-use-before-define": "off",
+    //typescript側のno-use-before-defineを使うようにする
+    "@typescript-eslint/no-use-before-define": ["error"],
+    //named exportがエラーになるので使えるようにoff
+    "import/prefer-default-export": "off",
+    //TypeScriptでチェックしているから不要
+    "react/prop-types": "off",
     "react/no-unknown-property": ["error", { "ignore": ["css"] }],
     "react/react-in-jsx-scope": "off",
     "react/function-component-definition": [
@@ -48,9 +56,8 @@
       {
         "devDependencies": [
           "vite.config.ts",
-          "src/setupTest.ts",
           ".storybook/**/*.{cjs,jsx,tsx}",
-          "src/setupTests.ts",
+          "src/setupTest.ts",
           "src/stories/**/*.stories.tsx",
           "src/**/*.test.{ts,tsx}"
         ]
@@ -64,6 +71,13 @@
         "jsx": "never",
         "ts": "never",
         "tsx": "never"
+      }
+    ],
+    //jsx形式のファイル拡張子をjsxもしくはtsxに限定
+    "react/jsx-filename-extension": [
+      "error",
+      {
+        "extensions": [".jsx", ".tsx"]
       }
     ]
   },
