@@ -58,7 +58,7 @@
           "vite.config.ts",
           ".storybook/**/*.{cjs,jsx,tsx}",
           "src/setupTest.ts",
-          "src/stories/**/*.stories.tsx",
+          "src/stories/**/*.stories.{ts,tsx}",
           "src/**/*.test.{ts,tsx}"
         ]
       }
