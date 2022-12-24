@@ -15,5 +15,6 @@
   "path-autocomplete.pathMappings": {
     "@": "${folder}/src"
   },
-  "path-autocomplete.extensionOnImport": true
+  "path-autocomplete.extensionOnImport": true,
+  "typescript.preferences.importModuleSpecifier": "non-relative"
 }
