@@ -1,4 +1,7 @@
 import { css } from '@emotion/react';
+// https://github.com/csstools/sanitize.css#install
+import 'sanitize.css';
+import 'sanitize.css/forms.css';
 
 const GlobalStyle = css`
   :root {
