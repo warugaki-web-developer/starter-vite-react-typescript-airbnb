@@ -5,7 +5,7 @@ import { css } from '@emotion/react';
 import 'sanitize.css';
 import 'sanitize.css/forms.css';
 
-const GlobalStyle = css`
+const globalStyle = css`
   @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&family=Roboto:wght@400;700&display=swap');
 
   :root {
@@ -33,4 +33,4 @@ const GlobalStyle = css`
   }
 `;
 
-export default GlobalStyle;
+export default globalStyle;
