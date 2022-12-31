@@ -1,7 +1,7 @@
-import AppStyle from '@/styles/AppStyle';
+import appStyle from '@/styles/appStyle';
 
 const App = () => (
-  <div className="App" css={AppStyle}>
+  <div className="app" css={appStyle}>
     <div>Hello World</div>
   </div>
 );

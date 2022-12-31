@@ -1,7 +1,7 @@
 import { css } from '@emotion/react';
 
-const AppStyle = css`
-  /* AppStyle */
+const appStyle = css`
+  /* appStyle */
 `;
 
-export default AppStyle;
+export default appStyle;
