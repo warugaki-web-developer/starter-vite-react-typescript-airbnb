@@ -1,10 +1,10 @@
 import { Global } from '@emotion/react';
-import GlobalStyle from '@/styles/GlobalStyle.tsx';
+import globalStyle from '@/styles/globalStyle.tsx';
 
 export const decorators = [
   (Story) => (
     <>
-      <Global styles={GlobalStyle} />
+      <Global styles={globalStyle} />
       <Story />
     </>
   ),
