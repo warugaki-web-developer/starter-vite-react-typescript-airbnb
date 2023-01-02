@@ -43,6 +43,7 @@
     "import/prefer-default-export": "off",
     //TypeScriptでチェックしているから不要
     "react/prop-types": "off",
+    "react/require-default-props": "off",
     "react/no-unknown-property": ["error", { "ignore": ["css"] }],
     "react/react-in-jsx-scope": "off",
     "react/function-component-definition": [
