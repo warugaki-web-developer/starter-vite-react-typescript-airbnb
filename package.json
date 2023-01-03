@@ -26,7 +26,7 @@
     "@emotion/react": "^11.10.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "sanitize.css": "^13.0.0"
+    "the-new-css-reset": "^1.8.2"
   },
   "devDependencies": {
     "@storybook/addon-essentials": "^7.0.0-beta.19",

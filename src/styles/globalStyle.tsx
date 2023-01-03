@@ -1,9 +1,8 @@
 import { css } from '@emotion/react';
 
 // reset css
-// https://github.com/csstools/sanitize.css#install
-import 'sanitize.css';
-import 'sanitize.css/forms.css';
+// https://elad2412.github.io/the-new-css-reset/
+import 'the-new-css-reset/css/reset.css';
 
 const globalStyle = css`
   @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&family=Roboto:wght@400;700&display=swap');
