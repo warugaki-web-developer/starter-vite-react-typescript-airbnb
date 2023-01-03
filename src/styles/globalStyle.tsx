@@ -29,6 +29,7 @@ const globalStyle = css`
     background-color: var(--bg-color-base);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    text-size-adjust: 100%;
   }
 `;
 
