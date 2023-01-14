@@ -6,7 +6,9 @@
   },
   "extends": [
     "airbnb",
+    "airbnb/hooks",
     "airbnb-typescript",
+    "plugin:react/recommended",
     "plugin:storybook/recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:@typescript-eslint/recommended-requiring-type-checking",
@@ -36,11 +38,14 @@
   "rules": {
     //関数や変数が定義される前に使われているとエラーになるデフォルトの機能をoff
     "no-use-before-define": "off",
+    // 一貫した型定義
+    "@typescript-eslint/consistent-type-definitions": ["error", "interface"], // or type
+    // 一貫した型のインポート
+    "@typescript-eslint/consistent-type-imports": ["error", { "prefer": "type-imports" }],
+    // 明示的な関数の戻り値の型
+    "@typescript-eslint/explicit-function-return-type": "error",
     //typescript側のno-use-before-defineを使うようにする
     "@typescript-eslint/no-use-before-define": ["error"],
-    "@typescript-eslint/consistent-type-definitions": ["error", "interface"], // or type
-    //named exportがエラーになるので使えるようにoff
-    "import/prefer-default-export": "off",
     //TypeScriptでチェックしているから不要
     "react/prop-types": "off",
     "react/require-default-props": "off",
@@ -53,6 +58,15 @@
         "unnamedComponents": "arrow-function"
       }
     ],
+    //jsx形式のファイル拡張子をjsxもしくはtsxに限定
+    "react/jsx-filename-extension": [
+      "error",
+      {
+        "extensions": [".jsx", ".tsx"]
+      }
+    ],
+    //named exportがエラーになるので使えるようにoff
+    "import/prefer-default-export": "off",
     "import/no-extraneous-dependencies": [
       "error",
       {
@@ -97,14 +111,6 @@
           "order": "asc"
         },
         "newlines-between": "always"
-      }
-    ],
-    "@typescript-eslint/consistent-type-imports": ["error", { "prefer": "type-imports" }],
-    //jsx形式のファイル拡張子をjsxもしくはtsxに限定
-    "react/jsx-filename-extension": [
-      "error",
-      {
-        "extensions": [".jsx", ".tsx"]
       }
     ]
   },
